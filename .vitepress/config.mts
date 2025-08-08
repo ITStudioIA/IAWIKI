@@ -19,14 +19,6 @@ export default defineConfig({
           { text: '团队成员', link: '/about/team' }
         ]
       },
-      {
-        text: '示例',
-        items: [
-          { text: 'Markdown 示例', link: '/markdown-examples' },
-          { text: '运行时 API 示例', link: '/api-examples' },
-          { text: '入部须知', link: '/入部须知' }
-        ]
-      },
 
     ],
 
