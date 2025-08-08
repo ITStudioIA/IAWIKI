@@ -1,7 +1,20 @@
 import { defineConfig } from 'vitepress'
+import {
+  GitChangelog,
+  GitChangelogMarkdownSection,
+} from '@nolebase/vitepress-plugin-git-changelog/vite'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  vite: {
+    plugins: [
+      GitChangelog({
+        // 填写在此处填写您的仓库链接
+        repoURL: () => 'https://github.com/nolebase/integrations',
+      }),
+      GitChangelogMarkdownSection(),
+    ],
+  },
   title: "智能应用部",
   description: "一个致力于人工智能应用的部门",
   themeConfig: {
@@ -35,10 +48,12 @@ export default defineConfig({
       {
         text: '资源下载',
         items: [
-          { text: '文档资料', link: '/resources/docs' },
-          { text: '工具软件', link: '/resources/tools' }
+          // { text: '文档资料', link: '/resources/docs' },
+          // { text: '工具软件', link: '/resources/tools' }
         ]
-      }
+      },
+      { text: '代办事项', link: '/todo' }
+
 
     ],
 
