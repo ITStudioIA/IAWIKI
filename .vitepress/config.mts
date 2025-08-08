@@ -21,18 +21,15 @@ export default defineConfig({
       {
         text: '知识准备',
         items: [
-          { text: '人工智能基础', link: '/knowledge/ai-basics' },
-          { text: '机器学习', link: '/knowledge/machine-learning' },
-          { text: '深度学习', link: '/knowledge/deep-learning' },
-          { text: '自然语言处理', link: '/knowledge/nlp' },
-          { text: '计算机视觉', link: '/knowledge/computer-vision' }
+          { text: 'MCP架构', link: '/knowledge/mcp' },
+          { text: 'QQ机器人', link: '/knowledge/qqbot' },
+
         ]
       },
       {
-        text: '项目展示',
+        text: '项目介绍',
         items: [
-          { text: '项目一', link: '/projects/project1' },
-          { text: '项目二', link: '/projects/project2' }
+          { text: 'MCP Server收集', link: '/projects/mcp_server' },
         ]
       },
       {
@@ -46,7 +43,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/ITStudioIA' }
     ]
   }
 })
