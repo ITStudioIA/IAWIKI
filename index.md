@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: 查看详情
-      link: /about
+      link: /about/入部须知
     # - theme: alt
     #   text: API Examples
     #   link: /api-examples
